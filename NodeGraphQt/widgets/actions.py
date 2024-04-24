@@ -81,7 +81,7 @@ class BaseMenu(QtWidgets.QMenu):
         return menus
 
 
-class GraphAction(QtWidgets.QAction):
+class GraphAction(QtGui.QAction):
 
     executed = QtCore.Signal(object)
 
