@@ -72,7 +72,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
             self.highlight()
 
     def itemChange(self, change, value):
-        if change == self.ItemSelectedChange and self.scene():
+        if change == self.GraphicsItemChange.ItemSelectedChange and self.scene():
             if value:
                 self.highlight()
             else:
