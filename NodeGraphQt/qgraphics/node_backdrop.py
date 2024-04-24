@@ -20,7 +20,7 @@ class BackdropSizer(QtWidgets.QGraphicsItem):
         super(BackdropSizer, self).__init__(parent)
         self.setFlag(self.GraphicsItemFlag.ItemIsSelectable, True)
         self.setFlag(self.GraphicsItemFlag.ItemIsMovable, True)
-        self.setFlag(self.ItemSendsScenePositionChanges, True)
+        self.setFlag(self.GraphicsItemFlag.ItemSendsScenePositionChanges, True)
         self.setCursor(QtGui.QCursor(QtCore.Qt.SizeFDiagCursor))
         self.setToolTip('double-click auto resize')
         self._size = size
