@@ -100,7 +100,7 @@ class NodeNavigationWidget(QtWidgets.QListView):
     def __init__(self, parent=None):
         super(NodeNavigationWidget, self).__init__(parent)
         self.setSelectionMode(self.SingleSelection)
-        self.setResizeMode(self.Adjust)
+        self.setResizeMode(self.ResizeMode.Adjust)
         self.setViewMode(self.ListMode)
         self.setFlow(self.LeftToRight)
         self.setDragEnabled(False)
