@@ -19,7 +19,7 @@ class BackdropSizer(QtWidgets.QGraphicsItem):
     def __init__(self, parent=None, size=6.0):
         super(BackdropSizer, self).__init__(parent)
         self.setFlag(self.GraphicsItemFlag.ItemIsSelectable, True)
-        self.setFlag(self.ItemIsMovable, True)
+        self.setFlag(self.GraphicsItemFlag.ItemIsMovable, True)
         self.setFlag(self.ItemSendsScenePositionChanges, True)
         self.setCursor(QtGui.QCursor(QtCore.Qt.SizeFDiagCursor))
         self.setToolTip('double-click auto resize')
@@ -139,7 +139,7 @@ class BackdropNodeItem(AbstractNodeItem):
             item = self.scene().items(rect)[0]
 
             if isinstance(item, (PortItem, PipeItem)):
-                self.setFlag(self.ItemIsMovable, False)
+                self.setFlag(self.GraphicsItemFlag.ItemIsMovable, False)
                 return
             if self.selected:
                 return
@@ -152,7 +152,7 @@ class BackdropNodeItem(AbstractNodeItem):
 
     def mouseReleaseEvent(self, event):
         super(BackdropNodeItem, self).mouseReleaseEvent(event)
-        self.setFlag(self.ItemIsMovable, True)
+        self.setFlag(self.GraphicsItemFlag.ItemIsMovable, True)
         [n.setSelected(True) for n in self._nodes]
         self._nodes = [self]
 
