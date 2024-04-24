@@ -139,7 +139,7 @@ class NodesGridView(QtWidgets.QListView):
         self.setSelectionMode(self.SelectionMode.ExtendedSelection)
         self.setUniformItemSizes(True)
         self.setResizeMode(self.ResizeMode.Adjust)
-        self.setViewMode(self.IconMode)
+        self.setViewMode(self.ViewMode.IconMode)
         self.setDragDropMode(self.DragOnly)
         self.setDragEnabled(True)
         self.setMinimumSize(300, 100)
