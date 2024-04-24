@@ -57,7 +57,7 @@ class NodeViewer(QtWidgets.QGraphicsView):
         """
         Args:
             parent:
-            undo_stack (QtWidgets.QUndoStack): undo stack from the parent
+            undo_stack (QtGui.QUndoStack): undo stack from the parent
                                                graph controller.
         """
         super(NodeViewer, self).__init__(parent)
