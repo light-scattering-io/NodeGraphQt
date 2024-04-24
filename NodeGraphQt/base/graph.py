@@ -5,7 +5,7 @@ import json
 import os
 import re
 
-from Qt import QtCore, QtWidgets
+from PySide6 import QtCore, QtWidgets
 
 from NodeGraphQt.base.commands import (NodeAddedCmd,
                                        NodesRemovedCmd,

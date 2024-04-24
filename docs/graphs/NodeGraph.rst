@@ -9,7 +9,7 @@ NodeGraph
 .. code-block:: python
     :linenos:
 
-    from Qt import QtWidgets
+    from PySide6 import QtWidgets
     from NodeGraphQt import NodeGraph
 
     if __name__ == '__main__':

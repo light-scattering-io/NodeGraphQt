@@ -3,7 +3,7 @@
 import math
 from distutils.version import LooseVersion
 
-from Qt import QtGui, QtCore, QtWidgets
+from PySide6 import QtGui, QtCore, QtWidgets
 
 from NodeGraphQt.base.menu import BaseMenu
 from NodeGraphQt.constants import (
