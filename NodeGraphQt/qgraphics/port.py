@@ -114,7 +114,7 @@ class PortItem(QtWidgets.QGraphicsItem):
         painter.restore()
 
     def itemChange(self, change, value):
-        if change == self.ItemScenePositionHasChanged:
+        if change == self.GraphicsItemChange.ItemScenePositionHasChanged:
             self.redraw_connected_pipes()
         return super(PortItem, self).itemChange(change, value)
 
