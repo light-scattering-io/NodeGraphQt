@@ -38,7 +38,7 @@ class BackdropSizer(QtWidgets.QGraphicsItem):
         return QtCore.QRectF(0.5, 0.5, self._size, self._size)
 
     def itemChange(self, change, value):
-        if change == self.ItemPositionChange:
+        if change == self.GraphicsItemChange.ItemPositionChange:
             item = self.parentItem()
             mx, my = item.minimum_size
             x = mx if value.x() < mx else value.x()
