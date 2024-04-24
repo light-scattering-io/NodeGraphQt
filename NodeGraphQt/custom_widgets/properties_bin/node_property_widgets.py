@@ -235,7 +235,7 @@ class _PortConnectionsContainer(QtWidgets.QWidget):
             port (NodeGraphQt.Port): port object.
         """
         item = QtWidgets.QTreeWidgetItem(tree)
-        item.setFlags(item.flags() & ~QtCore.Qt.ItemIsSelectable)
+        item.setFlags(item.flags() & ~QtCore.Qt.GraphicsItemFlag.ItemIsSelectable)
         item.setText(1, port.name())
         item.setToolTip(0, 'Lock Port')
         item.setToolTip(1, 'Port Name')

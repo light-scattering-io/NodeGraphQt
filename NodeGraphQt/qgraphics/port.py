@@ -16,7 +16,7 @@ class PortItem(QtWidgets.QGraphicsItem):
         super(PortItem, self).__init__(parent)
         self.setAcceptHoverEvents(True)
         self.setCacheMode(ITEM_CACHE_MODE)
-        self.setFlag(self.ItemIsSelectable, False)
+        self.setFlag(self.GraphicsItemFlag.ItemIsSelectable, False)
         self.setFlag(self.ItemSendsScenePositionChanges, True)
         self.setZValue(Z_VAL_PORT)
         self._pipes = []

@@ -30,7 +30,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
         super(PipeItem, self).__init__()
         self.setZValue(Z_VAL_PIPE)
         self.setAcceptHoverEvents(True)
-        self.setFlag(QtWidgets.QGraphicsItem.ItemIsSelectable)
+        self.setFlag(QtWidgets.QGraphicsItem.GraphicsItemFlag.ItemIsSelectable)
         self.setCacheMode(ITEM_CACHE_MODE)
 
         self._color = PipeEnum.COLOR.value
@@ -48,7 +48,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
 
         self._dir_pointer = QtWidgets.QGraphicsPolygonItem(self)
         self._dir_pointer.setPolygon(self._poly)
-        self._dir_pointer.setFlag(self.ItemIsSelectable, False)
+        self._dir_pointer.setFlag(self.GraphicsItemFlag.ItemIsSelectable, False)
 
         self.reset()
 
@@ -649,7 +649,7 @@ class LivePipePolygonItem(QtWidgets.QGraphicsPolygonItem):
 
     def __init__(self, parent):
         super(LivePipePolygonItem, self).__init__(parent)
-        self.setFlag(QtWidgets.QGraphicsItem.ItemIsSelectable, True)
+        self.setFlag(QtWidgets.QGraphicsItem.GraphicsItemFlag.ItemIsSelectable, True)
 
     def paint(self, painter, option, widget):
         """

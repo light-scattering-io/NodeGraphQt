@@ -18,7 +18,7 @@ class BackdropSizer(QtWidgets.QGraphicsItem):
 
     def __init__(self, parent=None, size=6.0):
         super(BackdropSizer, self).__init__(parent)
-        self.setFlag(self.ItemIsSelectable, True)
+        self.setFlag(self.GraphicsItemFlag.ItemIsSelectable, True)
         self.setFlag(self.ItemIsMovable, True)
         self.setFlag(self.ItemSendsScenePositionChanges, True)
         self.setCursor(QtGui.QCursor(QtCore.Qt.SizeFDiagCursor))
