@@ -72,7 +72,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
             self.highlight()
 
     def itemChange(self, change, value):
-        if change == self.GraphicsItemChange.ItemSelectedChange and self.scene():
+        if change == self.ItemSelectedChange and self.scene():
             if value:
                 self.highlight()
             else:
@@ -100,7 +100,7 @@ class PipeItem(QtWidgets.QGraphicsPathItem):
 
         painter.setPen(pen)
         painter.setBrush(self.brush())
-        painter.setRenderHint(painter.Antialiasing, True)
+        painter.setRenderHint(painter.RenderHint.Antialiasing, True)
         painter.drawPath(self.path())
 
         # QPaintDevice: Cannot destroy paint device that is being painted.

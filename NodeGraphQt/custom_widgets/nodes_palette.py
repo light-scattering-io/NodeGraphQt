@@ -34,7 +34,7 @@ class _NodesGridDelegate(QtWidgets.QStyledItemDelegate):
         )
 
         painter.save()
-        painter.setRenderHint(QtGui.QPainter.Antialiasing, True)
+        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing, True)
 
         # background.
         bg_color = option.palette.window().color()

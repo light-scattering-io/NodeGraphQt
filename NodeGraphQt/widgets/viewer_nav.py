@@ -29,7 +29,7 @@ class NodeNavigationDelagate(QtWidgets.QStyledItemDelegate):
         painter.save()
         painter.setPen(QtCore.Qt.NoPen)
         painter.setBrush(QtCore.Qt.NoBrush)
-        painter.setRenderHint(QtGui.QPainter.Antialiasing, True)
+        painter.setRenderHint(QtGui.QPainter.RenderHint.Antialiasing, True)
 
         # background.
         bg_color = QtGui.QColor(*ViewerNavEnum.ITEM_COLOR.value)
