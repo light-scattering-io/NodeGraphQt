@@ -50,8 +50,8 @@ class NodesTreeWidget(QtWidgets.QTreeWidget):
 
     def __init__(self, parent=None, node_graph=None):
         super(NodesTreeWidget, self).__init__(parent)
-        self.setDragDropMode(QtWidgets.QAbstractItemView.DragDropMode.DragOnly)
-        self.setSelectionMode(self.SelectionMode.ExtendedSelection)
+        self.setDragDropMode(QtWidgets.QAbstractItemView.DragOnly)
+        self.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self.setHeaderHidden(True)
         self.setWindowTitle('Nodes')
 
