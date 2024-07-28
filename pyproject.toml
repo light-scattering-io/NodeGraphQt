@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11, <3.13"
 pyside6 = ">=6.6.0"
+setuptools = "^71.1.0"
 
 
 [build-system]
