@@ -5,6 +5,7 @@ description = ""
 authors = ["Dear <lechadoq@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "NodeGraphQt"}]
 
 [tool.poetry.dependencies]
 python = "^3.11, <3.13"
